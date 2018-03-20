@@ -1,0 +1,50 @@
+{
+    "name": "nicolaskuster/laravel-make-rest-resource",
+    "description": "A easy way to generate all files for a RestResource",
+    "keywords": [
+        "laravel",
+        "resource",
+        "rest",
+        "controller",
+        "test",
+        "policy",
+        "request"
+    ],
+    "homepage": "https://github.com/nicolaskuster/laravel-make-rest-resource",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Kuster",
+            "email": "mail@nicolaskuster.ch"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicolaskuster\\MakeRestResource\\": "src/psr-4/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nicolaskuster\\MakeRestResource\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nicolaskuster\\MakeRestResource\\Providers\\MakeRestResourceServiceProvider"
+            ]
+        }
+    }
+}
